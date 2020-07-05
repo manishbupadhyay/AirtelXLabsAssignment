@@ -8,7 +8,7 @@ import com.airtel.qa.base.TestBase;
 import com.airtel.qa.pages.PopularSectionPage;
 
 public class PopularSectionPageTest extends TestBase {
-	
+
 	PopularSectionPage popularSectionPage;
 
 	public PopularSectionPageTest() {
@@ -19,14 +19,14 @@ public class PopularSectionPageTest extends TestBase {
 		initialization();
 		popularSectionPage = new PopularSectionPage();
 	}
-	
+
 	@Test
 	public void itemsWithLowestPrice() {
-		
+		popularSectionPage.addToCartLowsetPriceItem();
 	}
-	
+
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 }
