@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.airtel.qa.base.TestBase;
+import com.airtel.qa.extentreport.ExtentReport;
 import com.airtel.qa.pages.PopularSectionPage;
 
 public class PopularSectionPageTest extends TestBase {
@@ -24,9 +25,9 @@ public class PopularSectionPageTest extends TestBase {
 
 	@Test
 	public void itemsWithLowestPrice() {
+	
 		popularSectionPage.addToCartLowsetPriceItem();
 		
-		PopularSectionPage.logger.info("Verify that product is successfull added to cart or not");
 		// verify that product is successfully added to cart or not
 		String shoppingCartContains = driver.findElement(By.xpath("//span[@id='summary_products_quantity']//parent::span[@class='heading-counter']"))
 		.getText().substring(29, 31).replaceAll("\\s", "");
@@ -39,12 +40,11 @@ public class PopularSectionPageTest extends TestBase {
 	
 		Assert.assertEquals(shoppingCartContains, viewCartElement);
 		
-		PopularSectionPage.logger.info("Product verified");
 	}
 
 	@AfterMethod
 	public void tearDown() {
+		ExtentReport.htmlExtentReport();
 		driver.quit();
-		PopularSectionPage.logger.info("Browser closed");
 	}
 }

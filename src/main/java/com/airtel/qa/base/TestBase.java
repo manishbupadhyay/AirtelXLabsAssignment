@@ -5,13 +5,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-import com.airtel.qa.pages.PopularSectionPage;
 import com.airtel.qa.util.TestUtil;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -35,37 +33,26 @@ public class TestBase {
 	
 	public static void initialization() {
 		// read properties file
-		PopularSectionPage.logger.info("Test Case Started");
 		String browserName = prop.getProperty("browser");
-		PopularSectionPage.logger.info("Read browser property from config file");
 		if(browserName.equals("chrome")) {
 			// define system property for chrome browser. Here i am using WebDriverManager
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			PopularSectionPage.logger.info("Start Chrome driver");
 		}
 		else if(browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-			PopularSectionPage.logger.info("Start Firefox driver");
 		}
 		
 		driver.manage().window().maximize();
-		PopularSectionPage.logger.info("Maximize browser windows");
-		
 		driver.manage().deleteAllCookies();
-		PopularSectionPage.logger.info("Delete all browser cookies");
-		
+
 		// I have created TestUtil where I have put time for PageLoad and Implicit wait
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-		PopularSectionPage.logger.info("Page load timeout");
 		
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		PopularSectionPage.logger.info("Implicit wait");
 		
 		// Get URL from properties file
-		PopularSectionPage.logger.info("Get URL from properties file");
 		driver.get(prop.getProperty("url"));
-		PopularSectionPage.logger.info("Ope URL");
 	}
 }
