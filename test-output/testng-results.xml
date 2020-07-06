@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30292" started-at="2020-07-06T19:48:44 IST" finished-at="2020-07-06T19:49:14 IST">
+  <suite name="Default suite" duration-ms="55003" started-at="2020-07-06T20:28:33 IST" finished-at="2020-07-06T20:29:28 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30292" started-at="2020-07-06T19:48:44 IST" finished-at="2020-07-06T19:49:14 IST">
+    <test name="Default test" duration-ms="55003" started-at="2020-07-06T20:28:33 IST" finished-at="2020-07-06T20:29:28 IST">
       <class name="com.airtel.qa.testcases.PopularSectionPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.airtel.qa.testcases.PopularSectionPageTest@1b68ddbd]" name="setUp" is-config="true" duration-ms="21035" started-at="2020-07-06T19:48:44 IST" finished-at="2020-07-06T19:49:05 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.airtel.qa.testcases.PopularSectionPageTest@1b68ddbd]" name="setUp" is-config="true" duration-ms="45530" started-at="2020-07-06T20:28:33 IST" finished-at="2020-07-06T20:29:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="itemsWithLowestPrice()[pri:0, instance:com.airtel.qa.testcases.PopularSectionPageTest@1b68ddbd]" name="itemsWithLowestPrice" duration-ms="7539" started-at="2020-07-06T19:49:05 IST" finished-at="2020-07-06T19:49:12 IST">
+        <test-method status="PASS" signature="itemsWithLowestPrice()[pri:0, instance:com.airtel.qa.testcases.PopularSectionPageTest@1b68ddbd]" name="itemsWithLowestPrice" duration-ms="7918" started-at="2020-07-06T20:29:19 IST" finished-at="2020-07-06T20:29:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- itemsWithLowestPrice -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.airtel.qa.testcases.PopularSectionPageTest@1b68ddbd]" name="tearDown" is-config="true" duration-ms="1645" started-at="2020-07-06T19:49:12 IST" finished-at="2020-07-06T19:49:14 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.airtel.qa.testcases.PopularSectionPageTest@1b68ddbd]" name="tearDown" is-config="true" duration-ms="1440" started-at="2020-07-06T20:29:27 IST" finished-at="2020-07-06T20:29:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
