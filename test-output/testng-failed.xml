@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.airtel.qa.testcases.PopularSectionPageTest">
+      <class name="com.airtel.qa.testcases.PopularItemsWithDiscountTest">
         <methods>
-          <include name="itemsWithLowestPrice"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="discountItemsTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.airtel.qa.testcases.PopularSectionPageTest -->
+      </class> <!-- com.airtel.qa.testcases.PopularItemsWithDiscountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
