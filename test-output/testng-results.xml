@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27766" started-at="2020-07-07T14:49:23 IST" finished-at="2020-07-07T14:49:51 IST">
+  <suite name="Suite" duration-ms="59572" started-at="2020-07-25T21:05:55 IST" finished-at="2020-07-25T21:06:55 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27766" started-at="2020-07-07T14:49:23 IST" finished-at="2020-07-07T14:49:51 IST">
-      <class name="com.airtel.qa.testcases.PopularItemsWithDiscountTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.airtel.qa.testcases.PopularItemsWithDiscountTest@1b68ddbd]" name="setUp" is-config="true" duration-ms="25129" started-at="2020-07-07T14:49:23 IST" finished-at="2020-07-07T14:49:48 IST">
+    <test name="Test" duration-ms="59572" started-at="2020-07-25T21:05:55 IST" finished-at="2020-07-25T21:06:55 IST">
+      <class name="com.airtel.qa.testcases.PopularSectionPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.airtel.qa.testcases.PopularSectionPageTest@704a52ec]" name="setUp" is-config="true" duration-ms="48727" started-at="2020-07-25T21:05:55 IST" finished-at="2020-07-25T21:06:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="discountItemsTest()[pri:0, instance:com.airtel.qa.testcases.PopularItemsWithDiscountTest@1b68ddbd]" name="discountItemsTest" duration-ms="611" started-at="2020-07-07T14:49:48 IST" finished-at="2020-07-07T14:49:49 IST">
+        <test-method status="PASS" signature="itemsWithLowestPrice()[pri:0, instance:com.airtel.qa.testcases.PopularSectionPageTest@704a52ec]" name="itemsWithLowestPrice" duration-ms="7804" started-at="2020-07-25T21:06:44 IST" finished-at="2020-07-25T21:06:52 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- discountItemsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.airtel.qa.testcases.PopularItemsWithDiscountTest@1b68ddbd]" name="tearDown" is-config="true" duration-ms="1958" started-at="2020-07-07T14:49:49 IST" finished-at="2020-07-07T14:49:51 IST">
+        </test-method> <!-- itemsWithLowestPrice -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.airtel.qa.testcases.PopularSectionPageTest@704a52ec]" name="tearDown" is-config="true" duration-ms="2961" started-at="2020-07-25T21:06:52 IST" finished-at="2020-07-25T21:06:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.airtel.qa.testcases.PopularItemsWithDiscountTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.airtel.qa.testcases.PopularSectionPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
